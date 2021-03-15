@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+  <meta charset="UTF-8">
+  <title>Dotacja</title>
+</head>
+<body>
+
+  <h1>Formularz dotacji</h1>
+
+  <form>
+  <fieldset>
+    Beneficjent: <input title="Podaj beneficjenta" list="organizacje" required placeholder="Wybierz lub podaj"> <br>
+    <datalist id="organizacje">
+      <option>Wioski Dziecięce SOS</option>
+      <option>WOŚP</option>
+      <option>Caritas</option>
+      <option>Góra grosza</option>
+      <option>Schronisko w Krzesimowie</option>
+    </datalist>
+    Wartość dotacji: <input title="Podaj wartość dotacji (dotacja nie może być mniejsza niż 20)" required type="number" min="20" step="1" value="20">
+  </fieldset>
+  <br>
+  <fieldset><legend>Dane karty płatniczej</legend>
+    Karta: <input title="Zaznacz rodzaj swojej karty" required type="radio" name="karta"> Visa <input type="radio" name="karta"> Master Card <br>
+    Numer: <input title="Podaj numer karty" required pattern="[0-9]{13,16}"> <br>
+    Data ważności: <input title="Pdoaj datę ważności karty" required type="month"> <br>
+    Kod CVV: <input required title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty" pattern="[0-9]{3,4}">
+  </fieldset>
+  <br>
+
+  Darczyńca: <input required placeholder="Imię i nazwisko" title="Podaj imię i nazwisko darczyńcy" pattern="[A-Za-z- ]{3,}">
+
+  <br><br>
+
+  <input type="submit" value="Rejestruj">
+  <input type="reset" value="Wyczyść">
+
+  </form>
+
+</body>
+</html>
