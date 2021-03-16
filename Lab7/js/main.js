@@ -33,3 +33,9 @@ function pokazGalerie()
     }
     return tresc+'</div>';
 }
+function pokazKontakt()
+{
+    var tresc='<h2><br />Kontakt</h2>';
+        tresc+= 'Jan Kowalski <br> 00-020 Warszawa <br> Tel: 798 878 456 <br> email: j.kowalski@pollub.edu.pl <br><br>'
+    return tresc;
+}
