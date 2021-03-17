@@ -58,6 +58,16 @@ function sprawdz()
     }
     else document.getElementById("zaplata_error").innerHTML="";
     return ok;
+    pokazDane();
+}
+function pokazDane()
+{
+    var dane="Następujące dane zostaną wysłane:\n";
+    dane+="Nazwisko: "+document.getElementById('nazw').value+"\n";
+    dane+="Wiek: "+document.getElementById('wiek').value+"\n";
+    dane+="Kraj: "+document.getElementById("kraj").value+"\n";
+    dane+="Email: "+document.getElementById('email').value+"\n";
 
-
+    if (window.confirm(dane)) return true;
+    else return false;
 }
