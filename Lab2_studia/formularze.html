@@ -6,6 +6,7 @@
   <title> Szybki kurs HTML </title>
 
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="js/walidacja.js"></script>
 
 </head>
 
@@ -37,16 +38,17 @@
       <li>&lt;button&gt; - pole formularza typu przycisk</li>
     </ul>
   </div>
-  <div id="sample">
     <h2>Przykładowy formularz HTML:</h2>
     <div>
       <form action="mailto:beatap@cs.pollub.pl" method="post">
         <table>
-          <tr>
-           <td>Nazwisko:</td> <td><input type="text" name="surname"/></td>
+          <tr> <td>Nazwisko: </td>
+            <td><input name="nazw" size="30" id="nazw"/> </td>
+            <td id="nazw_error" class="czerwone"></td>
           </tr>
-          <tr>
-            <td>Wiek: </td><td><input type="number" name="age"/></td>
+          <tr> <td>Wiek:</td>
+            <td><input name="wiek" size ="30" id="wiek"/></td>
+            <td id="wiek_error" class="czerwone"></td>
           </tr>
           <tr>
             <td>Państwo: </td><td><input list="country" name="country" class="datalist-input" placeholder="Wybierz kraj"/></td>
@@ -299,30 +301,25 @@
               <option value="Zimbabwe">Zimbabwe</option>
             </datalist>
           </tr>
-          <tr>
-            <td>Adres e-mail: </td><td><input type="email" name="email"/></td>
+          <tr> <td>Adres e-mail: </td>
+            <td><input name="email" size ="30" id="email"/></td>
+            <td id="email_error" class="czerwone"></td>
           </tr>
         </table><br>
     </div>
-    <div id="order">
-      <h2>Zamawiam tutorial z języka: </h2>
-      <input type="checkbox" name="PHP" value="PHP" /> PHP
-      <input type="checkbox" name="C" value="C" /> C/C++
-      <input type="checkbox" name="Java" value="Java" /> Java <br>
-    </div>
-    <div id="payment">
-      <h2>Sposób zapłaty: </h2>
-      <input type="radio" name="payment_method" value="e" /> eurocard
-      <input type="radio" name="payment_method" value="v" /> visa
-      <input type="radio" name="payment_method" value="p" /> przelew bankowy
-      <br>
-      <input type="submit" value="Wyślij" />
-      <input type="reset" value="Anuluj" />
-    </div>
-    <br>
-    </form>
-  </div>
-  </div>
+      <h4>Zamawiam tutorial z języka:</h4>
+      <p><input name="php" type="checkbox" id="php"/>PHP
+        <input name="c" type="checkbox" id="c"/>C/C++
+        <input name="java" type="checkbox" id="java"/>Java
+        <span id="produkt_error" class="czerwone"></span></p>
+      <h4>Sposób zapłaty:</h4>
+      <p><input name="zaplata" id="zaplata" type="radio" value="euro" />eurocard
+        <input name="zaplata" type="radio" value= "visa" />visa
+        <input name="zaplata" type="radio" value= "przelew" />przelew bankowy
+        <span id="zaplata_error" class="czerwone"></span><br />
+        <input type="submit" value=" Wyślij " />
+        <input type="reset" value=" Anuluj " /></p>
+      </form>
 
 </div>
 <footer>&copy;PT</footer>
