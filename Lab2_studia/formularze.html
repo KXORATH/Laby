@@ -39,8 +39,7 @@
     </ul>
   </div>
     <h2>Przykładowy formularz HTML:</h2>
-    <div>
-      <form action="mailto:beatap@cs.pollub.pl" method="post">
+      <form action="mailto:beatap@cs.pollub.pl" method="post" id="formularz"  onsubmit="return sprawdz()">
         <table>
           <tr> <td>Nazwisko: </td>
             <td><input name="nazw" size="30" id="nazw"/> </td>
@@ -306,18 +305,17 @@
             <td id="email_error" class="czerwone"></td>
           </tr>
         </table><br>
-    </div>
       <h4>Zamawiam tutorial z języka:</h4>
-      <p><input name="php" type="checkbox" id="php"/>PHP
-        <input name="c" type="checkbox" id="c"/>C/C++
-        <input name="java" type="checkbox" id="java"/>Java
+      <p><input name="jezyk" type="checkbox" id="php"/>PHP
+        <input name="jezyk" type="checkbox" id="c"/>C/C++
+        <input name="jezyk" type="checkbox" id="java"/>Java
         <span id="produkt_error" class="czerwone"></span></p>
       <h4>Sposób zapłaty:</h4>
       <p><input name="zaplata" id="zaplata" type="radio" value="euro" />eurocard
         <input name="zaplata" type="radio" value= "visa" />visa
-        <input name="zaplata" type="radio" value= "przelew" />przelew bankowy
+        <input name="zaplata" checked="checked" type="radio" value= "przelew" />przelew bankowy
         <span id="zaplata_error" class="czerwone"></span><br />
-        <input type="submit" value=" Wyślij " />
+        <input type="submit" onclick="sprawdz()" value=" Wyślij " />
         <input type="reset" value=" Anuluj " /></p>
       </form>
 
