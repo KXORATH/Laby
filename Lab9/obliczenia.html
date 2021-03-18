@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="PL">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szybki kurs HTML</title>
+
+  <link rel="stylesheet" href="css/obliczenia.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+<div id="kontener">
+  <div id="baner"><h1>Szybki kurs HTML</h1></div>
+  <div id="menu">
+    <ul id="nav">
+      <li><a href="index.html">Podstawy</a></li>
+      <li><a href="tabele.html">Tabele</a></li>
+      <li><a href="">Formularze</a>
+        <ul>
+          <li><a href="formularze.html" >Pola formularza</a></li>
+          <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+        </ul>
+      </li>
+      <li><a href="galeria.html" title="">Galeria</a></li>
+    </ul>
+  </div>
+
+  <div id="tresc">
+    <h2>Pożyczka</h2>
+    <table>
+      <tbody>
+      <tr>
+        <td>Kwota: </td><td><input id="k" type="number"></td>
+      </tr>
+      <tr>
+        <td>Ile rat: </td><td><input id="n" type="number"></td>
+      </tr>
+      <tr>
+        <td>Procent: </td><td><input id="pr" type="number"></td>
+      </tr>
+      <tr>
+        <td>Rata miesięczna: </td><td><input disabled value="" id="r" ></td>
+      </tr>
+      <tr>
+        <td>Kwota z odsetkami: </td><td><input disabled value="" id="ko" ></td>
+      </tr>
+      </tbody>
+    </table>
+    <button onclick="oblicz()">Oblicz ratę stałą</button>
+  </div>
+  <div id="pasek">
+    <div class="box">
+      <h3>Walidatory:</h3>
+      <ul>
+        <li> <a href="http://validator.w3.org/">HTML </a></li>
+        <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Kursy:</h3>
+      <ul>
+        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+      </ul>
+    </div>
+  </div>
+  <footer id="footer">&copy;PT</footer>
+</div>
+
+</body>
+
+</html>
