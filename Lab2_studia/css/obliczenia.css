@@ -68,31 +68,6 @@ ul#nav li:hover ul {
   background:#ffffff;
   border-bottom:2px solid #0000a0;
 }
-#menu li {
-  float:left;
-  margin:0;
-  padding:0;
-  list-style:none;
-  padding-right:3px;
-  font-family:"Lucida Grande", sans-serif;
-  font-size:85%;
-}
-#menu a {
-  float:left;
-  display:block;
-  margin:0;
-  padding:4px 8px;
-  color:##6e3c96;
-  text-decoration:none;
-  border-bottom:none;
-  background:##98bed8;
-}
-#menu a:hover {
-  background:#ffffff;
-  color:##6e3c96;
-  text-decoration:none;
-}
-
 
 #tresc {
   float:left;
