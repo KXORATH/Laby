@@ -67,7 +67,18 @@ function pokazDane()
     dane+="Wiek: "+document.getElementById('wiek').value+"\n";
     dane+="Kraj: "+document.getElementById("kraj").value+"\n";
     dane+="Email: "+document.getElementById('email').value+"\n";
-
+    dane+="Język: ";
+    var jezyk=document.getElementsByName("jezyk");
+    for(let i=0; i<jezyk.length; i++)
+    {
+        if(jezyk[i].checked) dane+=jezyk[i].value+" ";
+    }
+    dane+="\n"+"Sposób zapłaty: ";
+    var zaplata=document.getElementsByName("zaplata");
+    for(let i=0; i<zaplata.length; i++)
+    {
+        if(zaplata[i].checked) dane+=zaplata[i].value+" ";
+    }
     if (window.confirm(dane)) return true;
     else return false;
 }

@@ -39,7 +39,7 @@
     </ul>
   </div>
     <h2>Przykładowy formularz HTML:</h2>
-      <form action="mailto:beatap@cs.pollub.pl" method="post" id="formularz"  onsubmit="return sprawdz()">
+      <form action="mailto:beatap@cs.pollub.pl" method="post" id="formularz"  onsubmit="return pokazDane()">
         <table>
           <tr> <td>Nazwisko: </td>
             <td><input name="nazw" size="30" id="nazw"/> </td>
@@ -306,14 +306,14 @@
           </tr>
         </table><br>
       <h4>Zamawiam tutorial z języka:</h4>
-      <p><input name="jezyk" type="checkbox" id="php"/>PHP
-        <input name="jezyk" type="checkbox" id="c"/>C/C++
-        <input name="jezyk" type="checkbox" id="java"/>Java
+      <p><input name="jezyk" type="checkbox" value="PHP"/>PHP
+        <input name="jezyk" type="checkbox" value="C"/>C/C++
+        <input name="jezyk" type="checkbox" value="Java"/>Java
         <span id="produkt_error" class="czerwone"></span></p>
       <h4>Sposób zapłaty:</h4>
-      <p><input name="zaplata" id="zaplata" type="radio" value="euro" />eurocard
-        <input name="zaplata" type="radio" value= "visa" />visa
-        <input name="zaplata" checked="checked" type="radio" value= "przelew" />przelew bankowy
+      <p><input name="zaplata" id="zaplata" type="radio" value="Eurocard" />eurocard
+        <input name="zaplata" type="radio" value= "Visa" />visa
+        <input name="zaplata" checked="checked" type="radio" value= "Przelew bankowy" />przelew bankowy
         <span id="zaplata_error" class="czerwone"></span><br />
         <input type="submit" onclick="sprawdz()" value=" Wyślij " />
         <input type="reset" value=" Anuluj " /></p>
