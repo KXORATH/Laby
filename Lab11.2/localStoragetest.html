@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Web storage</title>
+
+    <script src="main.js"></script>
+</head>
+<body>
+<form>
+<h1>Test sessionStorage</h1><br>
+Kod koloru: <input id="RGB" pattern="[A-F0-9]{6,6}">, nazwa koloru: <input id="nazwa" pattern="[a-zA-Z]{2,20}"><br><br>
+<button onclick="zapisz()">Zapisz parę</button> <button type="button" onclick="pokaz()">Pokaż wszystkie pary</button> <button onclick="usun()">Usuń
+    dane</button><br>
+</form>
+<h1>Dane z sessionStorage</h1>
+<div id="dane"></div>
+
+</body>
+</html>
