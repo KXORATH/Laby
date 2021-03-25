@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Kreator pizzy </title>
+</head>
+<body>
+
+<div>
+  <form action="mailto:beatap@cs.pollub.pl" method="post">
+    <h1>Kreator pizzy</h1>
+    <fieldset><legend>Rozmiar:</legend>
+      <input type="radio" name="size" value="m" /> Mała
+      <input type="radio" name="size" value="s" /> Średnia
+      <input type="radio" name="size" value="d" /> Duża
+    </fieldset>
+
+    <fieldset><legend>Składniki:</legend>
+      <input type="checkbox"/> Szynka <br>
+      <input type="checkbox"/> Salami <br>
+      <input type="checkbox"/> Boczek <br>
+      <input type="checkbox"/> Papryka <br>
+      <input type="checkbox"/> Pomidor <br>
+      <input type="checkbox"/> Ser <br>
+    </fieldset>
+
+    <fieldset><legend>Sosy:</legend>
+      Wybierz sos:
+      <select multiple="multiple" name="sos" size="4">
+        <option value="p">Pomidorowy</option>
+        <option value="c">Czosnkowy</option>
+        <option value="kl">Ketchup łagodny</option>
+        <option value="kp">Ketchup pikantny</option>
+      </select>
+      <br>
+      Inne uwagi:
+      <textarea cols="70" rows="5" name="opinia">
+		</textarea>
+    </fieldset>
+    <br>
+    <input type="reset" value="Wyczyść dane" />
+    <input type="submit" value="Wyślij zamówienie" />
+
+  </form>
+</div>
+
+</body>
