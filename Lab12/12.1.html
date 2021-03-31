@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz rejestracji</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        class User{
+            constructor(email="", login="user",pass="user") {
+                this.login=document.getElementById('login').value;
+                this.pass=document.getElementById('haslo').value;
+                this.email=document.getElementById('email').value;
+            }
+            pokaz(){
+                var email = document.getElementById('email').value;
+                var login = document.getElementById('login').value;
+                var haslo = document.getElementById('haslo').value;
+                return  "Dane użytkownika:<br>Email: "+email+"<br>Login: "+login+"<br>Hasło: "+haslo;
+            }
+
+        } // koniec definicji klasy User
+
+        function wyswietl()
+        {
+            user=new User();
+            document.getElementById("info").innerHTML = user.pokaz();
+            console.log(user.pokaz());
+            localStorage.setItem(user.login, JSON.stringify(user));
+        }
+        ;
+    </script>
+</head>
+<body>
+<div>
+    <h2>Rejestracja nowego użytkownika w localStorage</h2>
+    <div id='formularz'>
+        <form>
+        Email: <input id="email" type='email'><br>
+        Login: <input id="login" type='text'><br>
+        Hasło: <input id="haslo" type='password'><br>
+        <button type="button" onclick="wyswietl()" >Zarejestruj</button>
+        </form>
+    </div>
+    <div id='info'></div>
+</div>
+</body>
+</html>
