@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24b5dd81-5391-4ef9-91b9-29fe2c80d544" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab9/galeriaslider.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/galeriaslider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/dotacje.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/dotacje.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/js/obslugaobliczenia.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/js/obslugaobliczenia.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab9.4" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -50,6 +50,7 @@
       <workItem from="1616080940101" duration="428000" />
       <workItem from="1616613411351" duration="15000" />
       <workItem from="1616666747779" duration="49000" />
+      <workItem from="1616680237419" duration="5000" />
     </task>
     <servers />
   </component>

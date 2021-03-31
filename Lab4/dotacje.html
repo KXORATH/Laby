@@ -23,7 +23,7 @@
   <br>
   <fieldset><legend>Dane karty płatniczej</legend>
     Karta: <input title="Zaznacz rodzaj swojej karty" required type="radio" name="karta"> Visa <input type="radio" name="karta"> Master Card <br>
-    Numer: <input title="Podaj numer karty" required pattern="[0-9]{13,16}"> <br>
+    Numer: <input title="Podaj numer karty" required pattern="(^[0-9]{13}$)|(^[0-9]{16}$)"> <br>
     Data ważności: <input title="Pdoaj datę ważności karty" required type="month"> <br>
     Kod CVV: <input required title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty" pattern="[0-9]{3,4}">
   </fieldset>

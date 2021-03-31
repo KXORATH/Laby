@@ -1,4 +1,4 @@
-$(document).ready (function ()
+-$(document).ready (function ()
 {
     $('#tresc').css('background-color','lightgrey');
     $('#k').css('font-weight','bold').addClass('zielony');

@@ -5,6 +5,12 @@
     <title>Sklep</title>
 
     <script src="main.js"></script>
+    <style>
+        body
+        {
+            background-color: darkgrey;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,13 +19,15 @@
 Nazwa produktu: <input type="text" id="nazwa"> Cena: <input type="number" id="cena"> Kolor: <input type="color" id="kolor"> Liczba sztuk:
 <input type="number" id="liczba"><br><br>
 
-<button type="button" onclick="zapisz()">Zapisz produkty do koszyka</button>
-<button type="button" onclick="wyswietl()">Wyświetl koszyk</button>
-<button type="button" onclick="usunZadanie()">Usuń wszystkie produkty</button>
+<button type="button" onclick="dodajZadanie()">Zapisz produkty do koszyka</button>
+<button type="button" onclick="pokazListe()">Wyświetl koszyk</button>
+<button type="button" onclick="usunListe()">Usuń wszystkie produkty</button>
+<button type="button" onclick="wyszukaj()">Wyszukaj produkt po nazwie</button>
 
 </form>
 
 <div id="tabela"></div>
+<div id="edycja"></div>
 
 </body>
 </html>
