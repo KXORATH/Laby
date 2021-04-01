@@ -61,7 +61,8 @@ ul#nav li:hover ul {
 }
 
 #menu {
-  float:left;
+  display: flex;
+  align-items: center;
   width:100%;
   margin:0;
   padding:0;
@@ -69,31 +70,30 @@ ul#nav li:hover ul {
   border-bottom:2px solid #0000a0;
 }
 
+#srodek
+{
+  display: flex;
+  align-items: center;
+}
+
 #tresc {
-  float:left;
+  display: flex;
+  flex-direction: column;
   width:75%;
   padding:1%;
   background: #b6d0e4;
 }
 #pasek {
-  float:right;
   width:20%;
   padding:1%;
 }
 
-#pasek
-{
-  float:right;
-  width:20%;
-  padding:1%;
-}
 
 footer
 {
   background: #000040;
   color: #8080ff;
   text-align:center;
-  clear:both;
   width:100%;
   padding:5px 0 5px 0;
 
